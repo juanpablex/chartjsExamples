@@ -1,0 +1,37 @@
+/* Reseteo de márgenes y padding para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+/* Aseguramos que el body tenga un espacio adecuado */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Contenedor de los gráficos, organizados en 2 columnas */
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
+    gap: 20px; /* Espacio entre las gráficas */
+    margin-top: 20px;
+    
+}
+
+/* Aseguramos que los canvas de los gráficos tengan un tamaño adecuado */
+    canvas {
+        width: 60% !important; /* Los gráficos ocuparán el 100% del ancho del contenedor */
+        height: 300px !important; /* Ajusta la altura según sea necesario */
+        border: 1px solid #ccc; /* Agregamos un borde leve para visualización */
+    }
+
+/* Diseño responsivo para pantallas más pequeñas (como dispositivos móviles) */
+@media (max-width: 768px) {
+    .chart-container {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
