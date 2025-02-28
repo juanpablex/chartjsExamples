@@ -24,7 +24,7 @@ body {
 
 /* Aseguramos que los canvas de los gráficos tengan un tamaño adecuado */
     canvas {
-        width: 60% !important; /* Los gráficos ocuparán el 100% del ancho del contenedor */
+        width: 100% !important; /* Los gráficos ocuparán el 100% del ancho del contenedor */
         height: 300px !important; /* Ajusta la altura según sea necesario */
         border: 1px solid #ccc; /* Agregamos un borde leve para visualización */
     }
